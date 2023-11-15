@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS EventosNuevo;
+USE EventosNuevo;
+
+CREATE TABLE IF NOT EXISTS EventosTable (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255),
+    fecha_hora DATETIME,
+    ubicacion VARCHAR(255),
+    descripcion VARCHAR(255),
+    presupuesto DECIMAL(10, 2),
+    cantidad_invitados INT
+);
